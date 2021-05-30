@@ -1,5 +1,5 @@
 server <- function(input, output) {
-  df23 <- readRDS('data/my_data.rds')
+  df23 <- readRDS('data/FiveWords.rds')
   inputr <- eventReactive(input$submit, 
                           { trimws( gsub( '\\s+' ,' ', tolower(input$inputWords) ) ) }
                           ) 
