@@ -1,0 +1,65 @@
+---
+title: "Next word prediction - Data Science Capstone Project - Johns Hopkins"
+author: "Bishnu Poudel"
+date: "5/29/2021"
+output: ioslides_presentation
+widescreen: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Executive Summary
+
+In this presentation, I will present the next word prediction algorithm and its shiny app implementation. I have tried three algorithms on a part of the data provided. I could not use all the data due to memory constraints.
+
+- A simple markov-chain approach, which predicts the next word for just one input word.
+
+- A n-gram model which can predict next word for words between 2 and 5 words.
+
+- A keras model, which is under work.
+
+Codes for the project are in the github repository below:
+[Github Link](https://github.com/vsnupoudel/data-science-capstone-JohnsHopkins)
+
+## Markov Chain
+<div class="columns-2">![](markov.png){width = 50%, height=80%}
+
+- Tried and tested first order and higher order markovchain.
+- It took more 30 minutes to fit for Six thousand samples, so I could not experiment with bigger strings.
+- 2 thousand samples from each of the files were taken.
+- Predictions were satisfactory as shown on the picture to the left
+- Link to the notebook can be found here. [Colab Link](https://colab.research.google.com/drive/1cc_ZBvqcr3A7GI9_2zOX06aoE4c46aZO?usp=sharing)
+</div>
+
+## N gram {.smaller}
+<div class="columns-2">![](ngram5.png){}
+  
+  
+### **The simplest and best working model for me**
+- User can input from 2 words to 5 words at the moment
+- 2 hundred thousand samples were taken randomly from the 3 files.
+- Ngram fitting was faster compared to markov chain
+- Link to the notebook can be found here. [Colab for Ngram](https://colab.research.google.com/drive/1cc_ZBvqcr3A7GI9_2zOX06aoE4c46aZO?usp=sharing)
+- The shinyapp that takes 2 to 3 words as input . [Shiny App](https://vsnupoudel.shinyapps.io/capstoneUptoThreeWords)
+- The shinyapp takes upto 5 words. Delay might be upto 30 seconds the first time you run it.[Shiny App](https://vsnupoudel.shinyapps.io/capstoneFinal)
+
+</div>
+## Next steps and Conclusion
+<div class="columns-2">
+
+### **Have tried using Keras**
+- Pretrained Word Embeddings approach used to train the model.
+- This approach also uses Recurrent Neural Network cell called LSTM at its core.[Colab Link for Keras](https://colab.research.google.com/drive/1O4LMjz5oi1TBaIIsgt-bGnaL-2bEI2ga?usp=sharing)
+- Of all the models, Ngram model performed the best
+- Shinyapp has ngram model that takes only upto 5 words due to memory constraints.
+
+
+### **Other options to consider**
+- Back-off model
+- Transformer Network
+
+</div>
+
