@@ -7,7 +7,6 @@ server <- function(input, output) {
   output$outTable  <-  renderTable(  { df23 [ df23$X==inputr()
                             , c("X", "y")][1:3, ]            } ) 
 
-  data <- df23[1, "X"]
   output$outputWords <- renderText ( { 
     inputr()
     } )
