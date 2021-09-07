@@ -2,7 +2,7 @@
 - Have  implemented Markov Chain like model for 2 and 3 word ngrams ( 5 words did not fit in free tier rshiny)
 
 ## Link to just the Shiny Dashboard implementation
-[https://github.com/vsnupoudel/shinyDashboard](Shiny Dashboard Implementation)
+[Shiny Dashboard Implementation](https://github.com/vsnupoudel/shinyDashboard)
 
 ## TODO
 - Calculate probabilities for single word also -1 gram - ( maybe top 1k words only)
