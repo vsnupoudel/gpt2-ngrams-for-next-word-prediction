@@ -1,5 +1,5 @@
-# Predicting next word using Probabilistic approaches.
-- Have  implemented Markov Chain like model for 2 and 3 word ngrams ( 5 words did not fit in free tier rshiny)
+# Predicting next word using Probability Distribution of Ngrams in Training Corpus.
+- Have  implemented Markov Chain like model for 2 and 3 word ngrams ( 5 words did not fit in free tier shiny)
 
 ## Link to just the Shiny Dashboard implementation
 [Shiny Dashboard Implementation](https://github.com/vsnupoudel/shinyDashboard)
