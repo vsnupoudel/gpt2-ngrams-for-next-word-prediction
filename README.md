@@ -8,3 +8,6 @@
 - Calculate probabilities for single word also -1 gram - ( maybe top 1k words only)
 - Remove low frequency ngrams
 - Implement statistical testing - (chi squared)
+
+## GPT2 implementation in another branch
+- Flask endpoint for faster prediction done separately
