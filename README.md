@@ -10,4 +10,4 @@
 - Implement statistical testing - (chi squared)
 
 ## GPT2 implementation in another branch
-- Flask endpoint for faster prediction done separately
+- Flask endpoint for faster prediction done separately. Code changed to  load model object only the first time.
